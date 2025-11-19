@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom'
+
 export default function Hero() {
   return (
     <section className="relative overflow-hidden">
@@ -12,8 +14,12 @@ export default function Hero() {
               Séances personnalisées de kinésiologie pour réduire le stress, libérer les tensions et avancer sereinement.
             </p>
             <div className="mt-8 flex gap-4">
-              <a href="/reservation" className="px-5 py-3 rounded-md bg-blue-600 hover:bg-blue-500 text-white font-medium transition">Prendre rendez-vous</a>
-              <a href="/kinesiologie" className="px-5 py-3 rounded-md bg-white/10 hover:bg-white/20 text-white font-medium transition">En savoir plus</a>
+              <Link to="/reservation" className="px-5 py-3 rounded-md bg-blue-600 hover:bg-blue-500 text-white font-medium transition no-underline">
+                Prendre rendez-vous
+              </Link>
+              <Link to="/kinesiologie" className="px-5 py-3 rounded-md bg-white/10 hover:bg-white/20 text-white font-medium transition no-underline">
+                En savoir plus
+              </Link>
             </div>
           </div>
           <div className="relative">
